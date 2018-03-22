@@ -1,14 +1,21 @@
+// Vendor
 import React, { Component } from 'react';
+
+// Containers
+import Map from 'containers/Map'
+import Header from 'containers/Header'
+import Navigation from 'containers/Navigation'
+
+// Styles
 import './App.css';
-import Map from '../components/Map'
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Acreage</h1>
-        </header>
+        <Header/>
+        <Navigation/>
         <Map/>
       </div>
     );
