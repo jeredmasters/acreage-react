@@ -2,12 +2,14 @@
 import React, {Component} from 'react'
 import { connect } from 'react-redux'
 
+// Style
+import "./style.scss"
 
 class Header extends Component {
   render(){
     return (
-      <header className="App-header">
-        <h1 className="App-title">Acreage - {this.props.selectedLayer}</h1>
+      <header className="header">
+        <h1 className="title">Acreage - {this.props.selectedLayer}</h1>
       </header>
     )
   }

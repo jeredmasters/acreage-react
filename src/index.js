@@ -11,9 +11,13 @@ import App from './App';
 
 // Store
 import reducers from 'store/reducers'
+import {receivePolygons} from 'store/actions/Map'
 
 // Workers?
 import registerServiceWorker from './registerServiceWorker';
+
+// Sample 
+import sample_polygons from 'sample/Polygons'
 
 // Styles
 import './index.css';
@@ -27,6 +31,8 @@ const store = createStore(
   reducers,
   applyMiddleware(...middleware)
 )
+
+store.dispatch(receivePolygons(sample_polygons))
 
 
 ReactDOM.render(
